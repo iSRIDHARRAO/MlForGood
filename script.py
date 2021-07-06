@@ -5,7 +5,7 @@ from keras.models import load_model
 from keras.preprocessing import image
 import sys,os
 import cv2
-path=sys.argv[1]+" "+sys.argv[2]
+path=sys.argv[1]
 
 if os.path.isfile(r"/app/UI/static/ml/pred.jpg"):
         os.system("rm /app/UI/static/ml/pred.jpg")
@@ -13,7 +13,7 @@ if os.path.isfile(r"/app/UI/static/ml/pred.jpg"):
 
 print(path)
 # Loading model
-model1 = load_model('/app/BT_MODEL-v1.h5')
+model1 = load_model('/app/model/BT_MODEL-v1.h5')
 
 # Preprocessing the Training set
 train_data = ImageDataGenerator(rescale = 1./255,
