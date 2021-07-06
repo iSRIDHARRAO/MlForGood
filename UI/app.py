@@ -22,7 +22,7 @@ def upload_file():
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename)) 
             ext=file.filename.rsplit('.', 1)[1].lower()       
-            cmd="python"+" "+r"/app/script.py"+" "+UPLOAD_FOLDER+file.filename
+            cmd="python3"+" "+r"/app/script.py"+" "+UPLOAD_FOLDER+file.filename
             
             os.system(cmd)
             if os.path.isfile(r"/app/UI/static/ml/pred.jpg"):
