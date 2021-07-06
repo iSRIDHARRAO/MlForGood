@@ -454,13 +454,14 @@ p1 a:hover{
 
 .submit2:hover{
   background-color: black;
-  color:rgb(255, 255, 255);
+  color:rgb(255, 255, 255);\
 }
-a.fa.fa-google.info{
-  background-color: #007bb5;
-}
-.contact-us .footer{
+.contact-us .footer a{
   margin: 10px 20px;
   text-decoration: none;
   color: #f0f0f0 ;
+}
+
+a.fa.fa-google.info{
+  background-color: #007bb5;
 }
