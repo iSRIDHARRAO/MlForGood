@@ -256,7 +256,7 @@ background: #3B5998;
 color: white;
 }
 
-.fa-google info {
+.fa-twitter {
 background: #55ACEE;
 color: white;
 }
@@ -455,4 +455,12 @@ p1 a:hover{
 .submit2:hover{
   background-color: black;
   color:rgb(255, 255, 255);
+}
+a.fa.fa-google.info{
+  background-color: #007bb5;
+}
+.contact-us .footer{
+  margin: 10px 20px;
+  text-decoration: none;
+  color: #f0f0f0 ;
 }
