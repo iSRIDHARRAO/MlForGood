@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <style>
+*{
+    overflow-x: hidden;
+}
     .wrong-file img{
         margin-top: 20px;
+        width: 500px;
     }
     .background{
         background-image: none;
@@ -35,6 +39,26 @@
     .submit2:hover{
 			color: cornflowerblue;
 		}
+            #toplogoID {
+        height: 40px;
+    }
+        .contact-us .footer a{
+        width: 40px;
+        margin: 10px;
+    }
+        @media only screen and (max-width: 600px) {
+        #toplogoID{
+height: 30px;
+        }
+
+        .footer  .fa{
+            width: 100%;
+        }
+            .wrong-file img{
+        margin-top: 20px;
+        width: 75%;
+    }
+    }
 </style>
 <body>
     <div class="toplogo" id="toplogoID">
@@ -49,6 +73,9 @@
         <a href={{ url_for('home')}}#team>Team</a>
         <a href={{ url_for('home')}}#predict>Predict</a>
         <a class="active" href={{ url_for('home')}}#about>Home</a>
+                 <a href="javascript:void(0);" class="icon" id="iconID" style="margin-top:-20px" onclick="myFunction()" >
+    <i class="fa fa-bars" ></i>
+  </a>
     </div>
 <center>
     <div class="wrong-file">
@@ -90,7 +117,23 @@
 
 
 
+<script>
+    // Menubar
+function myFunction() {
+  var x = document.getElementById("navbarID");
+  var icon= document.getElementById("iconID");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+    icon.style = "margin-top: 10px;margin-right:40px"
+    // icon.style = "right: 30px"
 
+  } else {
+    x.className = "navbar";
+    icon.style = "margin-top: -20px;margin-right:20px"
+
+  }
+}
+</script>
 </body>
 <script src="https://kit.fontawesome.com/a6761c511f.js" crossorigin="anonymous"></script>
 

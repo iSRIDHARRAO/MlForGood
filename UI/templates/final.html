@@ -9,8 +9,19 @@
 
 	<link rel="stylesheet" href="../static/style.css">
 	<style>
+	*{
+		overflow-x: hidden;
+	}
+	.contact-us .footer a{
+		width: 40px;
+		margin: 10px;
+	}
+	#toplogoID {
+		height: 40px;
+	}
 		.wrong-file img{
         margin-top: 20px;
+        width: 500px;
     }
 		.background{
 			background-image: none;
@@ -33,6 +44,21 @@
 		#file-upload:hover{
         color: cornflowerblue;
     }
+        	.footer  .fa{
+    		width: 100%;
+    	}
+    @media only screen and (max-width: 600px) {
+    	#toplogoID{
+height: 30px;
+    	}
+    	.footer  .fa{
+    		width: 100%;
+    	}
+    	            .wrong-file img{
+        margin-top: 20px;
+        width: 75%;
+    }
+    }
 	</style>
 
 
@@ -51,6 +77,9 @@
         <a href={{ url_for('home')}}#team>Team</a>
         <a href={{ url_for('home')}}#predict>Predict</a>
         <a class="active" href={{ url_for('home')}}#about>Home</a>
+                 <a href="javascript:void(0);" class="icon" id="iconID" style="margin-top:-20px" onclick="myFunction()" >
+    <i class="fa fa-bars" ></i>
+  </a>
     </div>
 
 	<center>
@@ -87,7 +116,23 @@
 		</div>
 
 	</div>
+<script>
+	// Menubar
+function myFunction() {
+  var x = document.getElementById("navbarID");
+  var icon= document.getElementById("iconID");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+    icon.style = "margin-top: 10px;margin-right:40px"
+    // icon.style = "right: 30px"
 
+  } else {
+    x.className = "navbar";
+    icon.style = "margin-top: -20px;margin-right:20px"
+
+  }
+}
+</script>
 
 </body>
 

@@ -2,6 +2,7 @@
 <html>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 
-<div>
+<!-- <div> -->
 <div class="content2">
 
     <div class="toplogo" id="toplogoID">
@@ -19,16 +20,27 @@
             <h1>Together We will Beat Cancer</h1>
         </center>
     </div>
-
+    <!-- <nav><input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <div class="bar1 bar"></div>
+          <div class="bar2 bar"></div>
+          <div class="bar3 bar"></div>
+          <div class="bar4 bar"></div>
+          <div class="bar5 bar"></div>
+        </label></nav> -->
     <div class="navbar" id="navbarID">
         <label class="logo">V<label id="sub">isual</label> V<label id="sub">elocity</label></label>
         <a href="#contact">Contact Us</a>
         <a href="#team">Team</a>
         <a href="#predict">Predict</a>
         <a class="active" href="#about">Home</a>
+         <a href="javascript:void(0);" class="icon" id="iconID" style="margin-top:-20px" onclick="myFunction()" >
+    <i class="fa fa-bars" ></i>
+  </a>
     </div>
+
     <div class="about_brain-tumour">
-        <img src="../static/brain1.jpeg">
+        <div class="brain_head"><img src="../static/brain1.jpeg"></div>
         <div class="heading">
             <h1>Brain Tumours</h1>
 
@@ -254,7 +266,7 @@ Metastatic brain tumors .</p1>
    
 
 
-</div>
+<!-- </div> -->
 </body>
 <script src="https://kit.fontawesome.com/a6761c511f.js" crossorigin="anonymous"></script>
 <script>
@@ -273,5 +285,21 @@ function myFunction() {
     
   }
 }
+// Menubar
+function myFunction() {
+  var x = document.getElementById("navbarID");
+  var icon= document.getElementById("iconID");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+    icon.style = "margin-top: 10px;margin-right:40px"
+    // icon.style = "right: 30px"
+
+  } else {
+    x.className = "navbar";
+    icon.style = "margin-top: -20px;margin-right:20px"
+
+  }
+}
+
 </script>
 </html>
