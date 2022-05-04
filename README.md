@@ -17,25 +17,22 @@ Our web app predicts whether a person is suffering from a Brain Tumor by letting
 ## How we built it
 
 
-***Team Formation***
 
-The primary step of this project is the same as any other project we formed as a team and we called ourselves ***Visual Velocity***. Team members are from all over India and from different colleges. we are connected over LinkedIn and connected with referrals of friends. All the participants are undergrads or Just finished their bachelor's degree. 
-The team is a combo of multiple skilled people. So,  we divided into teams 
 
 - **Machine Learning:**
 
 ![ML-Architecture](https://drive.google.com/uc?export=view&id=1DAVuSJeGlbcoOJ6ppo4sojomr9ed2pw5)
 
-The Machine Learning team worked on code to create Convolutional Neural Network  Model for Brain Tumor prediction. They created Machine Learning Code with Keras.
+We've worked on code to create Convolutional Neural Network  Model for Brain Tumor prediction. Created Machine Learning Code with Keras.
 
 
 - **User Interface and Experience:**
 
-UI/UX team worked on website development. They created code for the website and the website is informative and has multiple details about Brain Tumors. 
+We've worked on website development.Created code for the website and the website is informative and has multiple details about Brain Tumors. 
 
-- **Architecture team:**
+- **Architecture :**
 
-The architecture team worked on the creation of the pipeline with Machine Learning code and Frontend code and automated from Development to Production with DevOps tools: Shell Scripting, Ansible, Docker, Kubernetes, Git Hub Actions, ArgoCD, Terraform, and Cloud Platforms: Microsoft Azure for AKS and AWS for S3
+We've team worked on the creation of the pipeline with Machine Learning code and Frontend code and automated from Development to Production with DevOps tools: Shell Scripting, Ansible, Docker, Kubernetes, Git Hub Actions, ArgoCD, Terraform, and Cloud Platforms: Microsoft Azure for AKS and AWS for S3
 
 ***Pipeline***
 
