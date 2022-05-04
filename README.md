@@ -74,7 +74,6 @@ We faced a ton of challenges throughout the project :
 - Integrated 10+ tools to automate everything from development to production 
 - The Website is designed in such a way it is very user-friendly and simple to navigate 
 - The predictions are almost correct. 
-- We  implemented the project in 3 days before the deadline of the Hackathon 
 
 ## What we learned
 
